@@ -26,6 +26,10 @@ h2 {
     padding-bottom: 5px;
 }
 .office-img {
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+
     max-width: 100%;
     height: auto;
     margin-top: 10px;
