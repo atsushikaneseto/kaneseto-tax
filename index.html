@@ -2,101 +2,213 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>かねせと税理士事務所</title>
-    <style>
-        body {
-            font-family: "Yu Gothic", sans-serif;
-            background-color: #f2f6fa;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1a75cf;
-            color: white;
-            padding: 1.2em;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 1.5em;
-        }
-        .section {
-            background: #ffffff;
-            border-radius: 8px;
-            padding: 1.5em;
-            margin-bottom: 1.5em;
-            box-shadow: 0 0 8px rgba(0,0,0,0.05);
-        }
-        .section img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 1em auto;
-        }
-        h2 {
-            border-bottom: 2px solid #1a75cf;
-            padding-bottom: 0.3em;
-        }
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: none;
-        }
-        @media screen and (max-width: 768px) {
-            .section {
-                padding: 1em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>かねせと税理士事務所</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Yu Gothic", sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #1a75cf;
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      font-size: 1.1em;
+    }
+    nav {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      padding: 0.8em 1.5em;
+      display: flex;
+      justify-content: center;
+      gap: 1.5em;
+      font-weight: bold;
+    }
+    nav a {
+      color: #1a75cf;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2em 1em;
+    }
+    .section {
+      background: white;
+      border-radius: 8px;
+      padding: 2em;
+      margin-bottom: 2em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      font-size: 1.5em;
+      border-left: 6px solid #1a75cf;
+      padding-left: 0.5em;
+      margin-bottom: 1em;
+    }
+    .accordion-item {
+      margin-bottom: 1em;
+    }
+    .accordion-button {
+      background-color: #f0f8ff;
+      border: none;
+      padding: 1em;
+      width: 100%;
+      text-align: left;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      background-color: #f9f9f9;
+      border-left: 4px solid #1a75cf;
+      margin-top: 0.3em;
+    }
+    .accordion-content p {
+      margin: 1em;
+    }
+    footer {
+      background-color: #eee;
+      padding: 2em 1em;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>かねせと税理士事務所</h1>
-        <p>元統括国税調査官としての経験を活かした、信頼と実績の税務サポート</p>
-    </header>
-    <main class="container">
-        <div class="section">
-            <h2>代表税理士挨拶</h2>
-            <img src="images/代表税理士.jpg" alt="代表税理士">
-            <p>
-                代表税理士の金瀬戸です。<br>
-                私は、長年にわたり税務署に勤務し、統括国税調査官としての職務を経て退官後、税理士として登録いたしました。<br>
-                税務調査を「する側」と「受ける側」双方の視点を持ち合わせていることが私の強みです。<br>
-                その経験を活かし、丁寧かつ的確な税務サポートを提供いたします。
-            </p>
-        </div>
-        <div class="section">
-            <h2>業務内容</h2>
-            <ul>
-                <li>法人税・所得税・相続税などの申告業務</li>
-                <li>税務調査の事前対策・立会い</li>
-                <li>経営顧問・経営支援</li>
-                <li>相続・贈与のサポート</li>
-                <li>個人事業主・フリーランスのサポート</li>
-                <li>法人設立アドバイス</li>
-                <li>年末調整・法定調書作成支援</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h2>事務所の風景</h2>
-            <h3>🏢 事務所外観</h3>
-            <img src="images/事務所外観.jpg" alt="事務所外観">
-            <h3>🖥️ 事務所内観</h3>
-            <img src="images/事務所内観.jpg" alt="事務所内観">
-        </div>
-        <div class="section">
-            <h2>アクセス・連絡先</h2>
-            <p>
-                〒630-0252 奈良県生駒市山崎町4-10 サンアイビル3階<br>
-                電話：070-6926-2670<br>
-                メール：atsushikaneseto@gmail.com
-            </p>
-            <iframe src="https://maps.google.com/maps?q=〒630-0252 奈良県生駒市山崎町4-10&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe>
-        </div>
-    </main>
+
+  <header>
+    <h1>かねせと税理士事務所</h1>
+    <p>元統括国税調査官としての経験を活かした、信頼と実績の税務サポート</p>
+  </header>
+
+  <nav>
+    <a href="#greeting">ご挨拶</a>
+    <a href="#services">業務案内</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+
+  <main class="container">
+    <section class="section" id="greeting">
+      <h2>代表税理士挨拶</h2>
+      <img src="images/代表税理士.jpg" alt="代表税理士" style="max-width:100%; height:auto; border-radius: 8px;">
+      <p>
+        代表税理士の金瀬戸です。<br>
+        私は、長年にわたり税務署に勤務し、統括国税調査官としての職務を経て退官後、税理士として登録いたしました。<br>
+        税務調査を「する側」と「受ける側」双方の視点を持ち合わせていることが私の強みです。<br>
+        その経験を活かし、丁寧かつ的確な税務サポートを提供いたします。
+      </p>
+    </section>
+
+    <section class="section" id="services">
+      <h2>業務案内</h2>
+
+      <div class="accordion-item">
+        <button class="accordion-button">法人税・所得税・相続税などの申告業務</button>
+        <div class="accordion-content"><p>
+          申告内容の誤りを防ぎ、税務リスクを最小限に。複雑な控除や計算もお任せください。
+        </p></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button">税務調査の事前対策・立会い</button>
+        <div class="accordion-content"><p>
+          税務署の視点を理解しているからこそ、調査の論点や対応のコツまでご案内できます。
+        </p></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button">経営顧問・経営支援</button>
+        <div class="accordion-content"><p>
+          税務だけでなく、経営判断や資金調達の相談にも応じます。毎月の定例支援も可能です。
+        </p></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button">相続・贈与のサポート</button>
+        <div class="accordion-content"><p>
+          円満な相続を支えるため、事前の計画から申告・名義変更までトータルサポートします。
+        </p></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button">個人事業主・フリーランスの支援</button>
+        <div class="accordion-content"><p>
+          開業届・青色申告承認申請書からクラウド会計まで。副業やフリーランスの方も歓迎。
+        </p></div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-button">創業支援・法人設立アドバイス</button>
+        <div class="accordion-content"><p>
+          設立前の法人形態の選択から、税務署届出、資金繰りの計画まで丁寧にサポートします。
+        </p></div>
+      </div>
+    </section>
+
+    
+  
+<section class="section" id="office">
+  <h2>事務所の様子</h2>
+  <h3>🏢 外観</h3>
+  <img src="images/事務所外観.jpg" alt="事務所外観" style="max-width:100%; border-radius: 8px;">
+  <h3>🖥️ 内観</h3>
+  <img src="images/事務所内観.jpg" alt="事務所内観" style="max-width:100%; border-radius: 8px;">
+</section>
+
+<section class="section" id="contact">
+      <h2>お問い合わせ</h2>
+      <p>
+        📞 電話：070-6926-2670<br>
+        📧 メール：atsushikaneseto@gmail.com<br>
+        奈良県生駒市山崎町4-10 サンアイビル3階
+      </p>
+    </section>
+<div class="section">
+  <h2>アクセス</h2>
+  <p>〒630-0252 奈良県生駒市山崎町4-10 サンアイビル3階</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.566433595042!2d135.7006627152109!3d34.68946778043813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001222e407c9c7d%3A0x4ecbd391d1d37f42!2z44GK44Gr44Gk44Gp6ZaA5a-M5aSn6YCa5aOrIOODrOODpeODs-OCv-OBruWPt-WFrOW5s-WPo-iCoeaWsOWkmuWbnuOBl-eUn-aWueaWsOWMl-a4heWbnuOCkueUuuOCueWNgw!5e0!3m2!1sja!2sjp!4v1719123456789" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</main>
+
+  <footer>
+    © 2025 かねせと税理士事務所｜奈良県生駒市山崎町4-10 サンアイビル3階
+  </footer>
+
+  <script>
+    const items = document.querySelectorAll('.accordion-item');
+    items.forEach(item => {
+      const btn = item.querySelector('.accordion-button');
+      const content = item.querySelector('.accordion-content');
+      btn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('active');
+        items.forEach(i => {
+          i.classList.remove('active');
+          i.querySelector('.accordion-content').style.maxHeight = null;
+        });
+        if (!isOpen) {
+          item.classList.add('active');
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
